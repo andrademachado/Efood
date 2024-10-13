@@ -9,4 +9,5 @@ export const  TagContiner = styled.div<Props>`
     font-size: ${(props) => (props.size === 'big' ? '12px' : '10px')};
     font-weight: 700;
     padding: ${(props) => (props.size === 'big' ? '4px 6px' : '4px 6px')};
-`
+    display: inline-block;
+    `

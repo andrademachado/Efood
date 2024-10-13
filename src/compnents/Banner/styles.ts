@@ -8,7 +8,8 @@ export const Topo = styled.div`
     width: 100%;
     height: 384px;
     padding: 40px;
-    text-align: center;    
+    text-align: center;
+    margin-bottom: 80px;
 `
 export const Texto = styled.p`
     color: ${cores.vermelho};
