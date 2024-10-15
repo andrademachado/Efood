@@ -4,7 +4,8 @@ import  { createGlobalStyle } from "styled-components"
 export const cores = {   
     vermelho:'#E66767',
     branco: '#FFFFFF',
-    bege: '#FFEBD9'
+    bege: '#FFEBD9',
+    begeClaro:' #FFF8F2'
 }
 
 //reset do estilo global
@@ -19,7 +20,7 @@ export const GlobalCss = createGlobalStyle`
     }
 
     body{
-        background-color:  ${cores.bege};
+        background-color:  ${cores.begeClaro};
         color: ${cores.branco};
         padding-top: -23px;
     }

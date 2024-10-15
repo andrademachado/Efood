@@ -1,34 +1,58 @@
 import Tag from "../Tag"
 import estrela from '../../assets/image/Star-1 (2).png'
 import Button from "../Button"
-import { Borda, Card, Descricao, Imagem, Numero, Targeta, Titulo } from "./styles"
+import { Borda, Card, Descricao, Imagem, Infos, Numero,  Tema,  Titulo } from "./styles"
 
-const Product = () => (
+type Props = {
+    title:string
+    category: string
+    system: string
+    description: string
+    infos: string[]
+    image: string
+    number: number
+}
+
+const Product = ({ 
+    title,
+    category,
+    system,
+    description, 
+    infos, 
+    image,
+    number
+
+}: Props) => (
     <Card>
         <div className="container">
             <Imagem>
-        <img src="//placehold.it/472x217" />
-            <Targeta>
-        <Tag size="big">Destaque da semana</Tag>
-        <Tag size="small">Japonesa</Tag>
-            </Targeta>
+                <img src={image} width={472} height={217} alt="Hioki Sushi "/>
+        
+                <Infos>
+                {infos.map((info) => (
+                    <Tag key={info}>{info}</Tag>
+                ))}
+                </Infos>            
             </Imagem>
             <Borda>
 
-        <Titulo>
-        <h2>Hioki Sushi </h2>
-                <Numero>4.9 </Numero>
-        <img src={estrela} width={21}  height={21}  alt="Estrela" />
+                <Tema>
+                    <Titulo>{title} </Titulo>
+                    
+                <Numero>
+                    {number} 
+                    <img src={estrela} width={21}  height={21}  alt="Estrela" />
+                </Numero>
 
-        </Titulo>
-        <Descricao>Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!
+                </Tema>
+        <Descricao>{description}
             <br />
             <br />
         <Button type="link" to="/produto" title="Clique aqui para saber mais">Saiba mais</Button>
         </Descricao>
             </Borda>
-
         </div>
+
     </Card>
 )
 

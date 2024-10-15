@@ -7,35 +7,48 @@ export const Card = styled.div`
     background-color: ${cores.branco};
     color: ${cores.vermelho};
     width:472px ;
-    height: 490px;
+    height: 452px;
     margin-bottom: 48px;
+
     margin-right: 8px;
     position: relative;
+    border: 1px solid;
     
     
 
     ${TagContiner} {
         margin-left: 20px;
         margin-right: 12px;
+        margin-top: 8px;
         
     }
-
    
 `
+export const Tema = styled.div`
+font-weight: bold;
+display: flex;
+margin-right: 4px;
+margin-left: 4px;
+gap: 30px;
+margin-top: 12px;
+margin-bottom: 20px;
+justify-content: space-between;
+`
 
 
 
-export const Titulo = styled.div`
-    font-weight: bold;
-    font-size: 16px;
-    display: flex;
-    margin-left: 8px;
-    
-    margin-top: 16px;
-    margin-bottom: 48px;
+export const Titulo = styled.h1`
+font-size: 20px;
+margin-left: 2px;
+margin-bottom: 0px;
+position: relative;
+
+
+
 `
 export const Numero = styled.h2`
-    margin-left: 270px;
+    margin-left: 150px;
+    
 `
 
 export const Descricao = styled.p`
@@ -53,14 +66,22 @@ export const Targeta = styled.div`
 
 `
 export const Imagem = styled.div`
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 18px;
+    line-height: 18px;
     display: block;
+    justify-content: space-between;
     
 `
+
 export const Borda = styled.div`
-    border: 2px solid;
+    
 `
+export const Infos = styled.div`
+    position: absolute;
+    top: 16px;
+    right: 16px;
+`
+
 
 
 
