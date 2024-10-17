@@ -1,5 +1,5 @@
 import Restaurante from "../../models/Restaurante"
-import Product from "../Product"
+import Italia from "../Italia"
 import { Container, List } from  './style'
 
 type Props = {    
@@ -7,12 +7,13 @@ type Props = {
     restaurantes: Restaurante[]
 }
 
-const ProductsList = ({ background, restaurantes }: Props) => (
+const ItaliaList = ({ background, restaurantes }: Props) => (
     <Container>
         <div className="container">
         <List>
                 {restaurantes.map(restaurante => (
-                <Product    
+
+                <Italia   
                         key={restaurante.id}
                         category={restaurante.category}
                         description={restaurante.description}
@@ -20,12 +21,14 @@ const ProductsList = ({ background, restaurantes }: Props) => (
                         infos={restaurante.infos}
                         system={restaurante.system}
                         title={restaurante.title}
-                        number={restaurante.number}               
+                        number={restaurante.number}
+                                
                 />
                 ))} 
         </List>
         </div>
+
     </Container>
 )
 
-export default ProductsList
+export default ItaliaList

@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom"
 import Tag from "../Tag"
 import estrela from '../../assets/image/Star-1 (2).png'
-import Button from "../Button"
-import { Borda, Card, Descricao, Imagem, Infos, Numero,  Tema,  Titulo } from "./styles"
+
+import { Borda, Botão, Card, Descricao, Imagem, Infos, Numero,  Saiba,  Tema,  Titulo } from "./styles"
 
 type Props = {
     title:string
@@ -35,24 +36,24 @@ const Product = ({
                 </Infos>            
             </Imagem>
             <Borda>
-
                 <Tema>
                     <Titulo>{title} </Titulo>
-                    
                 <Numero>
                     {number} 
                     <img src={estrela} width={21}  height={21}  alt="Estrela" />
                 </Numero>
-
                 </Tema>
         <Descricao>{description}
             <br />
             <br />
-        <Button type="link" to="/produto" title="Clique aqui para saber mais">Saiba mais</Button>
+                    <Botão>
+                <Link to="/estabelecimento">
+                            <Saiba>Saiba mais</Saiba>
+                </Link>
+                    </Botão>
         </Descricao>
             </Borda>
         </div>
-
     </Card>
 )
 

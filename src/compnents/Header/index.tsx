@@ -4,6 +4,8 @@ import logo from '../../assets/image/logo (1).png'
 
 const Header = () => 
     <HeaderBar>
+        <div className="container">
+        </div>
         <Item>
         <a href="#">
             <Title>Restaureantes</Title>

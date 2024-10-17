@@ -1,6 +1,5 @@
 import  { createGlobalStyle } from "styled-components"
 
-//tabela de cores  *(Variaveis pra usar em todo o projeto)
 export const cores = {   
     vermelho:'#E66767',
     branco: '#FFFFFF',
@@ -8,7 +7,6 @@ export const cores = {
     begeClaro:' #FFF8F2'
 }
 
-//reset do estilo global
 export const GlobalCss = createGlobalStyle`
     * {
         margin: 0;
@@ -30,7 +28,6 @@ export const GlobalCss = createGlobalStyle`
         width: 100%;
         margin: 0 auto;
     }
-
 `
 
 
