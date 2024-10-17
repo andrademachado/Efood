@@ -5,6 +5,7 @@ import pizza from '../../assets/image/pizzapng.png'
 import Header from "../../compnents/Header"
 import ItaliaList from "../../compnents/ItaliaList"
 import Cartaz from "../../compnents/Cartaz"
+import Footer from "../../compnents/Footer"
 
 
 const japonesa: Restaurante[] = [

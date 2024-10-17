@@ -4,6 +4,7 @@ import Restaurante from "../../models/Restaurante"
 import sushi from '../../assets/image/sushimi.png'
 import espaguete from '../../assets/image/Espaguete.png'
 import Cartaz from "../../compnents/Cartaz"
+import Footer from "../../compnents/Footer"
 
 const localComercial: Restaurante[] = [
     {
@@ -71,7 +72,6 @@ const localComercial: Restaurante[] = [
 const Home =() => (
     <>
         <Banner />
-        
         <ProductsList restaurantes={localComercial} background='branco' />
     </>
 )
